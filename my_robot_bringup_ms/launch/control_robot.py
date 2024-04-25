@@ -56,6 +56,8 @@ def generate_launch_description():
                 'robot_ip': '192.168.20.35',
                 'use_fake_hardware':'false',
                 'launch_rviz':'false'#,
+                # victor
+                , 'initial_joint_controller':'joint_trajectory_controller',
                 #'initial_joint_controller':'joint_trajectory_controller'
             }.items()
         )

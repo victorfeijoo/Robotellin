@@ -200,8 +200,10 @@ def main(args = None):
     control_node.close_gripper() 
     time.sleep(2)
 
-    #joint_values = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6]
-    #control_node.send_joint_commands(joint_values)
+    moveit2.move_to_pose(position=[-0.251,-0.129,0.19], quat_xyzw=[0.18474743606783836, -0.9827670174247706, 0.004786203006938818, 0.003803496964226814], cartesian=True) #moveit mueve el robot
+    moveit2.wait_until_executed()
+
+    time.sleep(1)
 
     control_node.open_gripper() 
     time.sleep(2)
